@@ -35,7 +35,7 @@ public class Menu extends ItemMakanan {
 
     @Override
     public double hitungHarga() {
-        return harga; // default
+        return harga; 
     }
 
     @Override
