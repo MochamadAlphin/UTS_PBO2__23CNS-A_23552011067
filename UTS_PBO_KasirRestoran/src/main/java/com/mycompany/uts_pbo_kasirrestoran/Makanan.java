@@ -16,6 +16,6 @@ public class Makanan extends Menu {
 
     @Override
     public double hitungHarga() {
-        return getHarga() * 1.1; // contoh: pajak 10%
+        return getHarga() * 1.1;
     }
 }
