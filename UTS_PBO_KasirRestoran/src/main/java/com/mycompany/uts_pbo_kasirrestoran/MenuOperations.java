@@ -93,7 +93,6 @@ public void addPesanan(Pesanan pesanan, int idMenu, int jumlah) {
     try (Connection conn = DatabaseConnection.getConnection()) {
         conn.setAutoCommit(false);
 
-        // Step 1: Insert ke tabel pesanan
         String pesananQuery = "INSERT INTO pesanan (Meja, Status) VALUES (?, ?)";
 
         int generatedIdPesanan = -1;
@@ -102,23 +101,21 @@ public void addPesanan(Pesanan pesanan, int idMenu, int jumlah) {
             pesananStmt.setString(2, pesanan.getStatus().name());
             pesananStmt.executeUpdate();
 
-            // Ambil generated ID dari tabel pesanan
+        
             ResultSet generatedKeys = pesananStmt.getGeneratedKeys();
             if (generatedKeys.next()) {
                 generatedIdPesanan = generatedKeys.getInt(1);
             }
         }
 
-        // Step 2: Insert ke detail_pesanan dengan menambahkan jumlah
         String detailQuery = "INSERT INTO detail_pesanan (Id_Pesanan, Id_Menu, Jumlah) VALUES (?, ?, ?)";
         try (PreparedStatement detailStmt = conn.prepareStatement(detailQuery)) {
-            detailStmt.setInt(1, generatedIdPesanan);  // ID Pesanan yang baru dimasukkan
-            detailStmt.setInt(2, idMenu);              // ID Menu yang dipilih
-            detailStmt.setInt(3, jumlah);              // Jumlah yang dipesan
+            detailStmt.setInt(1, generatedIdPesanan); 
+            detailStmt.setInt(2, idMenu);             
+            detailStmt.setInt(3, jumlah);             
             detailStmt.executeUpdate();
         }
 
-        // Commit transaksi
         conn.commit();
         System.out.println("Pesanan berhasil ditambahkan.");
     } catch (SQLException e) {
@@ -150,7 +147,7 @@ public List<Pesanan> getPesanan() {
                     return newPesanan;
                 });
 
-            pesanan.addJumlah(jumlah); // Assuming adding quantity to total
+            pesanan.addJumlah(jumlah); 
         }
     } catch (SQLException e) {
         e.printStackTrace();
