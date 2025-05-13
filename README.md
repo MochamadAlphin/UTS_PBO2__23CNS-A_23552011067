@@ -1,34 +1,38 @@
-UTS Pemrograman Berorientasi Obyek 2
+# UTS Pemrograman Berorientasi Obyek 2
+<ul>
+  <li>Mata Kuliah: Pemrograman Berorientasi Obyek 2</li>
+  <li>Dosen Pengampu: <a href="https://github.com/Muhammad-Ikhwan-Fathulloh">Muhammad Ikhwan Fathulloh</a></li>
+</ul>
 
-    Mata Kuliah: Pemrograman Berorientasi Obyek 2
-    Dosen Pengampu: Muhammad Ikhwan Fathulloh
+## Profil
+<ul>
+  <li>Nama: {nama}</li>
+  <li>NIM: {nim}</li>
+  <li>Studi Kasus: {studi kasus}</li>
+</ul>
 
-Profil
+## Judul Studi Kasus
+<p>Lorem ipsum sir dolor amet.</p>
 
-    Nama: {nama}
-    NIM: {nim}
-    Studi Kasus: {studi kasus}
+## Penjelasan Studi Kasus
+<p>Lorem ipsum sir dolor amet.</p>
 
-Judul Studi Kasus
+## Penjelasan 4 Pilar OOP dalam Studi Kasus
 
-Lorem ipsum sir dolor amet.
-Penjelasan Studi Kasus
+### 1. Inheritance
+<p>Lorem ipsum sir dolor amet.</p>
 
-Lorem ipsum sir dolor amet.
-Penjelasan 4 Pilar OOP dalam Studi Kasus
-1. Inheritance
+### 2. Encapsulation
+<p>Lorem ipsum sir dolor amet.</p>
 
-Lorem ipsum sir dolor amet.
-2. Encapsulation
+### 3. Polymorphism
+<p>Lorem ipsum sir dolor amet.</p>
 
-Lorem ipsum sir dolor amet.
-3. Polymorphism
+### 4. Abstract
+<p>Lorem ipsum sir dolor amet.</p>
 
-Lorem ipsum sir dolor amet.
-4. Abstract
-
-Lorem ipsum sir dolor amet.
-Demo Proyek
-
-    Github: Github
-    Youtube: Youtube
+## Demo Proyek
+<ul>
+  <li>Github: <a href="">Github</a></li>
+  <li>Youtube: <a href="">Youtube</a></li>
+</ul>
