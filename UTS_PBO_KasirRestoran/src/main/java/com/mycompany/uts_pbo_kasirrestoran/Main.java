@@ -34,13 +34,13 @@ public class Main {
             
             while (!scanner.hasNextInt()) {
                 System.out.println("Harap masukkan angka!");
-                scanner.next(); // buang input salah
+                scanner.next(); 
             }
             choice = scanner.nextInt();
-            scanner.nextLine(); // buang newline
+            scanner.nextLine(); 
 
             switch (choice) {
-                case 1: // Tambahkan Menu
+                case 1: 
                     System.out.print("Masukkan Nama Menu: ");
                     String namaMenu = scanner.nextLine();
 
@@ -76,16 +76,16 @@ public class Main {
                     menuOperations.addMenu(menuBaru);
                     break;
 
-                case 2: // Lihat Semua Menu
+                case 2: 
                     System.out.println("Daftar Menu:");
                     List<Menu> menus = menuOperations.getMenus();
                     menus.forEach(System.out::println);
                     break;
 
-                case 3: // Update Menu
+                case 3: 
                     System.out.print("Masukkan ID Menu untuk diupdate: ");
                     int idUpdate = scanner.nextInt();
-                    scanner.nextLine(); // buang newline
+                    scanner.nextLine(); 
 
                     System.out.print("Masukkan Nama Menu Baru: ");
                     String newNamaMenu = scanner.nextLine();
@@ -122,21 +122,21 @@ public class Main {
                     menuOperations.updateMenu(idUpdate, updatedMenu);
                     break;
 
-                case 4: // Hapus Menu
+                case 4: 
                     System.out.print("Masukkan ID Menu untuk dihapus: ");
                     int idDelete = scanner.nextInt();
                     menuOperations.deleteMenu(idDelete);
                     break;
 
-       case 5: // Tambahkan Pesanan
+       case 5:
     System.out.print("Masukkan ID Menu: ");
-    int idMenu = scanner.nextInt(); // Mengambil ID Menu dari pengguna
-
+    int idMenu = scanner.nextInt(); 
+                    
     System.out.print("Masukkan Jumlah: ");
-    int jumlah = scanner.nextInt(); // Menambahkan input jumlah
-
+    int jumlah = scanner.nextInt();
+                    
     System.out.print("Masukkan Meja: ");
-    String meja = scanner.next(); // Meja yang akan digunakan
+    String meja = scanner.next(); 
 
     Enums.StatusMeja statusMeja = null;
     while (statusMeja == null) {
@@ -148,15 +148,13 @@ public class Main {
         }
     }
 
-    // Membuat objek Pesanan
     Pesanan pesanan = new Pesanan(meja, statusMeja);
 
-    // Menambahkan pesanan ke dalam sistem
-    menuOperations.addPesanan(pesanan, idMenu, jumlah); // Kirim 3 argumen: pesanan, idMenu, dan jumlah
+    menuOperations.addPesanan(pesanan, idMenu, jumlah); 
     break;
 
 
-                case 6: // Lihat Semua Pesanan
+                case 6:
                     System.out.println("Daftar Pesanan:");
                     List<Pesanan> pesananList = menuOperations.getPesanan();
                     pesananList.forEach(System.out::println);
