@@ -16,6 +16,6 @@ public class Minuman extends Menu {
 
     @Override
     public double hitungHarga() {
-        return getHarga(); // tidak ada pajak
+        return getHarga(); 
     }
 }
