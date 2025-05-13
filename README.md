@@ -164,6 +164,6 @@ ItemMakanan adalah kelas abstrak, yaitu kelas yang tidak bisa dibuat objeknya se
 
 ## Demo Proyek
 <ul>
-  <li>Github: <a href="">[Github](https://github.com/MochamadAlphin/UTS_PBO2__MochamadAlphin_23552011067/blob/main/README.md)</a></li>
+  <li>Github: <a href="">[Github](https://github.com/MochamadAlphin/UTS_PBO2__23CNS-A_23552011067)</a></li>
   <li>Youtube: <a href="">Gdrive : https://drive.google.com/file/d/1RpgmPlqfH3UTBk30k-0XCVWnx3sn-vuq/view?usp=sharing </a></li>
 </ul>
